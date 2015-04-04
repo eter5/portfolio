@@ -1,169 +1,74 @@
-/* main.css
+/*
+ * style.css
  *
- * by Eter5 Lab
+ * by Israel Bastida: Eter5 Lab.
+ */
 
 
 /**********************************
- * Framework
+ * Development
  *********************************/
 
 /* {
   border: 1px solid red !important;
 }*/
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.grid {
-  margin: 0 auto;
-  max-width: 1200px;
-  width: 100%;
-}
-
-.row {
-  width: 100%;
-  margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col-1 {
-  width: 8.33%;
-}
-
-.col-2 {
-  width: 16.66%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-4 {
-  width: 33.33%;
-}
-
-.col-5 {
-  width: 41.66%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-7 {
-  width: 58.33%;
-}
-
-.col-8 {
-  width: 66.66%;
-}
-
-.col-9 {
-  width: 75%;
-}
-
-.col-10 {
-  width: 83.33%;
-}
-
-.col-11 {
-  width: 91.66%;
-}
-
-.col-12 {
-  width: 100%;
-}
-
-
 
 /************************************
  * Portfolio
  ***********************************/
 
+/*
+ * Body
+------------------------------------*/
+
 body {
   font-family: 'Oxygen', sans-serif;
-  text-rendering: optimizeLegibility;
 }
 
-a {
-  color: #223;
-  text-decoration: none;
+a,
+button {
+  min-width: 48px;
+  min-height: 48px;
+  padding: 1.5em;
 }
-
 
 /*
  * Header
 ---------------------------------*/
 
-header {
-  border-bottom: 4px solid #bcbbbb;
+#my-logo {
+  margin-top: 20px;
 }
 
-h1 {
+#my-name {
   font-family: 'Poiret One', cursive;
-  color: #223;
-}
-
-h2 {
-  color: #889;
-}
-
-h3 {
-  color: #556;
-}
-
-#name {
-  margin: 0 auto;
-  font-size: 6em;
+  font-size: 5.9em;
   font-weight: 400;
+  color: #223;
   text-shadow: 1px 1px 2px #8cf;
-  text-align: right;
+  margin: 20px 0 0 0;
 }
 
-#subtitle {
+#my-title {
   margin: 0 auto;
-  font-size: 2em;
-  padding-right: 0.5%;
+  color: #556;
+  font-size: 1.9em;
+  padding-right: 0.1em;
   padding-bottom: 1em;
-  text-align: right;
 }
-
 
 /*
  * Featured Work
 ------------------*/
 
-.featured-work-title h2 {
-  margin: 0 auto;
+#featured-work {
+  color: #889;
   font-size: 2.5em;
   padding-left: 0.5em;
-  padding-top: 0.5em;
 }
 
-.featured-work-content {
-  justify-content: space-between;
-}
-
-.featured-work-content h3 {
-  margin: 0 auto;
-  padding-top: 0.2em;
-  padding-bottom: 0.3em;
+h3.text-uppercase {
+  color: #556;
   font-size: 2.5em;
-  text-transform: uppercase;
-}
-
-.work {
-  max-width: 350px;
-  text-align: center;
-}
-
-.work img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
