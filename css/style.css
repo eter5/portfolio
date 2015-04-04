@@ -1,17 +1,10 @@
+@import url(http://weloveiconfonts.com/api/?family=brandico|zocial);
+
 /*
  * style.css
  *
  * by Israel Bastida: Eter5 Lab.
  */
-
-
-/**********************************
- * Development
- *********************************/
-
-/* {
-  border: 1px solid red !important;
-}*/
 
 
 /************************************
@@ -20,7 +13,7 @@
 
 /*
  * Body
-------------------------------------*/
+ */
 
 body {
   font-family: 'Oxygen', sans-serif;
@@ -33,42 +26,289 @@ button {
   padding: 1.5em;
 }
 
+
 /*
  * Header
----------------------------------*/
+ */
 
-#my-logo {
-  margin-top: 20px;
+header {
+  padding-top: 27%;
+  padding-bottom: 27%;
+  background-color: #9cf;
+}
+
+#logo img {
+  padding-bottom: 20px;
+  border-radius: 100%;
+  margin: 0 auto;
 }
 
 #my-name {
+  margin: 0;
+  padding-top: 20px;
   font-family: 'Poiret One', cursive;
-  font-size: 5.9em;
+  font-size: 3.8em;
   font-weight: 400;
-  color: #223;
-  text-shadow: 1px 1px 2px #8cf;
-  margin: 20px 0 0 0;
+  color: #eff;
+  text-shadow: 1px 1px 2px #a74;
 }
 
 #my-title {
-  margin: 0 auto;
-  color: #556;
-  font-size: 1.9em;
+  margin: 0;
   padding-right: 0.1em;
-  padding-bottom: 1em;
+  font-size: 1.7em;
+  color: #357;
 }
+
+
+/*
+ * Content
+ */
+
+#content div {
+  padding: 0;
+}
+
+#content img {
+  display: block;
+  margin: auto;
+}
+
 
 /*
  * Featured Work
-------------------*/
+ */
 
 #featured-work {
-  color: #889;
-  font-size: 2.5em;
-  padding-left: 0.5em;
+  margin: 0 auto;
 }
 
-h3.text-uppercase {
+#featured-work div.row:first-child {
+  padding-top: 20px;
+}
+
+#featured-work h2 {
+  color: #889;
+  font-size: 2.5em;
+}
+
+.project-img {
+  padding-top: 31px;
+  display: block;
+  margin: auto;
+}
+
+#featured-work h3 {
   color: #556;
   font-size: 2.5em;
+}
+
+.link-to-project {
+  padding-bottom: 31px;
+}
+
+
+/*
+ * Footer
+ */
+
+footer {
+  background-color: #333;
+  color: #ccc;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer ul {
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+footer li {
+  display: block;
+  margin: 0 1em;
+  padding: 1.5em;
+}
+
+footer a {
+  color: #ccc;
+}
+
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+
+/*
+ * Media Queries
+ */
+
+@media screen and (min-width: 360px) {
+
+  /*
+   * Header
+   */
+
+  #my-name {
+    font-size: 4.3em;
+  }
+
+  #my-title {
+    font-size: 2em;
+  }
+
+}
+
+@media screen and (min-width: 375px) {
+
+  /*
+   * Header
+   */
+
+  #my-name {
+    font-size: 4.5em;
+  }
+
+}
+
+@media screen and (min-width: 384px) {
+
+  /*
+   * Header
+   */
+
+  #my-name {
+    font-size: 4.6em;
+  }
+
+  #my-title {
+    font-size: 2.1em;
+  }
+
+}
+
+@media screen and (min-width: 414px) {
+
+  /*
+   * Header
+   */
+
+  #my-name {
+    font-size: 5em;
+  }
+
+  #my-title {
+    font-size: 2.3em;
+  }
+
+  /*
+   * Featured Work
+   */
+
+  #featured-work div.row:first-child {
+    padding-left: 15px;
+  }
+
+}
+
+@media screen and (min-width: 480px) {
+
+  /*
+   * Header
+   */
+
+  header {
+    padding-top: 5%;
+    padding-bottom: 9%;
+  }
+
+  #logo img {
+    padding-bottom: 1px;
+  }
+
+  #my-name {
+    padding-top: 10px;
+    font-size: 5.9em;
+  }
+
+  #my-title {
+    font-size: 2.3em;
+  }
+
+}
+
+@media screen and (min-width: 560px) {
+
+  /*
+   * Header
+   */
+
+    header {
+    padding-top: 3%;
+    padding-bottom: 9%;
+  }
+
+  #my-name {
+    padding-top: 3px;
+    font-size: 7.1em;
+  }
+
+  #my-title {
+    font-size: 2.8em;
+  }
+
+  /*
+   * Footer
+   */
+
+  footer li {
+    display: inline;
+  }
+
+}
+
+@media screen and (min-width: 640px) {
+
+  /*
+   * Header
+   */
+
+  header {
+    padding-top: 7%;
+    padding-bottom: 11%;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  /*
+   * Header
+   */
+
+  header {
+    padding-top: 2%;
+    padding-bottom: 3%;
+  }
+
+  #logo img {
+    margin: 0;
+  }
+
+  header div:first-child {
+    float: left;
+  }
+
+  header div:last-child {
+    float: right;
+  }
+
 }

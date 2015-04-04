@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio</title>
+  <title>Israel Bastida | Portfolio</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -24,44 +24,102 @@
   <![endif]-->
 </head>
 <body>
+
   <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <img id="my-logo" class="img-responsive" src="http://placehold.it/130" alt="Logo">
+
+    <header class="row">
+      <div id="logo" class="col-md-6">
+        <picture>
+          <source
+            media="(min-width: 415px)"
+            srcset="http://placehold.it/150/aa7744/ff9933&text=logo">
+          <img
+            class="img-responsive"
+            src="http://placehold.it/200/aa7744/ff9933&text=logo"
+            alt="logo">
+        </picture>
       </div>
       <div class="col-md-6 text-right">
         <h1 id="my-name">Israel Bastida</h1>
         <h3 id="my-title" class="text-uppercase">Front-End Ninja</h3>
       </div>
-    </div>
-    <div class="row">
+    </header><!-- /header -->
+
+    <div id="content" class="row">
       <div class="col-md-12">
-        <img class="img-responsive" src="http://placehold.it/1140x460" alt="main image">
+        <picture>
+          <source
+            media="(min-width: 971px)"
+            srcset="http://lorempixel.com/1170/650/abstract">
+          <source
+            media="(min-width: 741px)"
+            srcset="http://lorempixel.com/970/540/abstract">
+          <source
+            media="(min-width: 641px)"
+            srcset="http://lorempixel.com/740/420/abstract">
+          <source
+            media="(min-width: 571px)"
+            srcset="http://lorempixel.com/640/360/abstract">
+          <source
+            media="(min-width: 481px)"
+            srcset="http://lorempixel.com/570/320/abstract">
+          <source
+            media="(min-width: 415px)"
+            srcset="http://lorempixel.com/480/320/abstract">
+          <source
+            media="(min-width: 385px)"
+            srcset="http://lorempixel.com/415/730/abstract">
+          <source
+            media="(min-width: 360px)"
+            srcset="http://lorempixel.com/385/640/abstract">
+          <img
+            class="img-responsive"
+            src="http://lorempixel.com/360/540/abstract"
+            alt="image">
+        </picture>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h2 id="featured-work">Featured Work</h2>
+    </div><!-- /#content -->
+
+    <section id="featured-work" class="row">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Featured Work</h2>
+        </div>
       </div>
-    </div>
-    <div class="row text-center">
-      <div class="col-md-4">
-        <img class="img-responsive" src="http://placehold.it/360" alt="Appify" data-toggle="modal" data-target="#appify">
-        <h3 class="text-uppercase">Appify</h3>
-        <p><a href="#">Link to project</a></p>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <picture>
+            <img class="img-responsive project-img" src="http://lorempixel.com/360/360/people" alt="Appify" data-toggle="modal" data-target="#appify">
+          </picture>
+          <h3 class="text-uppercase">Appify</h3>
+          <p class="link-to-project"><a href="#">Link to project</a></p>
+        </div>
+        <div class="col-md-4">
+          <picture>
+            <img class="img-responsive project-img" src="http://lorempixel.com/360/360/nature" alt="Sunflower" data-toggle="modal" data-target="#sunflower">
+          </picture>
+          <h3 class="text-uppercase">Sunflower</h3>
+          <p class="link-to-project"><a href="#">Link to project</a></p>
+        </div>
+        <div class="col-md-4">
+          <picture>
+            <img class="img-responsive project-img" src="http://lorempixel.com/360/360/city" alt="Bokeh" data-toggle="modal" data-target="#bokeh">
+          </picture>
+          <h3 class="text-uppercase">Bokeh</h3>
+          <p class="link-to-project"><a href="#">Link to project</a></p>
+        </div>
       </div>
-      <div class="col-md-4">
-        <img class="img-responsive" src="http://placehold.it/360" alt="Sunflower" data-toggle="modal" data-target="#sunflower">
-        <h3 class="text-uppercase">Sunflower</h3>
-        <p><a href="#">Link to project</a></p>
-      </div>
-      <div class="col-md-4">
-        <img class="img-responsive" src="http://placehold.it/360" alt="Bokeh" data-toggle="modal" data-target="#bokeh">
-        <h3 class="text-uppercase">Bokeh</h3>
-        <p><a href="#">Link to project</a></p>
-      </div>
-    </div>
-  </div>
+    </section><!-- /#featured-work -->
+
+    <footer class="row">
+      <ul>
+        <li class="zocial-guest"><a href="#">About me</a></li>
+        <li class="brandico-twitter"><a href="https://twitter.com/eter5">Follow me</a></li>
+        <li class="brandico-github-text"><a href="https://github.com/eter5">GitHub</a></li>
+      </ul>
+    </footer>
+
+  </div><!-- /.container -->
 
   <!-- Appify modal -->
   <div class="modal fade" id="appify" tabindex="-1" role="dialog" aria-labelledby="appifyLabel" aria-hidden="true">
